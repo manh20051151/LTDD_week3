@@ -4,6 +4,11 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 
 import FirstScreen from './screen/FirstScreen'
 import a_1 from './screen/1_a'
+import b_1 from './screen/1_b'
+import c_1 from './screen/1_c'
+import d_1 from './screen/1_d'
+import e_1 from './screen/1_e'
+
 
 const  Stack = createStackNavigator();
 
@@ -20,6 +25,26 @@ const Home = ({navigation}) => {
             navigation.navigate('a_1');
           }}
         />
+          <Button title='b_1' 
+          onPress={()=>{
+            navigation.navigate('b_1');
+          }}
+        />
+          <Button title='c_1' 
+          onPress={()=>{
+            navigation.navigate('c_1');
+          }}
+        />
+            <Button title='d_1' 
+          onPress={()=>{
+            navigation.navigate('d_1');
+          }}
+        />
+          <Button title='e_1' 
+          onPress={()=>{
+            navigation.navigate('e_1');
+          }}
+        />
     </View>
   )
 }
@@ -33,7 +58,10 @@ export default function App() {
         
         <Stack.Screen name="FirstScreen" component={FirstScreen}></Stack.Screen>
         <Stack.Screen name="a_1" component={a_1}></Stack.Screen>
-
+        <Stack.Screen name="b_1" component={b_1}></Stack.Screen>
+        <Stack.Screen name="c_1" component={c_1}></Stack.Screen>
+        <Stack.Screen name="d_1" component={d_1}></Stack.Screen>
+        <Stack.Screen name="e_1" component={e_1}></Stack.Screen>
       </Stack.Navigator>
 
     </NavigationContainer>
