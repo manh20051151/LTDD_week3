@@ -8,7 +8,7 @@ import b_1 from './screen/1_b'
 import c_1 from './screen/1_c'
 import d_1 from './screen/1_d'
 import e_1 from './screen/1_e'
-
+import b_2 from './screen/2_b'
 
 const  Stack = createStackNavigator();
 
@@ -45,6 +45,11 @@ const Home = ({navigation}) => {
             navigation.navigate('e_1');
           }}
         />
+            <Button title='b_2' 
+          onPress={()=>{
+            navigation.navigate('b_2');
+          }}
+        />
     </View>
   )
 }
@@ -62,6 +67,7 @@ export default function App() {
         <Stack.Screen name="c_1" component={c_1}></Stack.Screen>
         <Stack.Screen name="d_1" component={d_1}></Stack.Screen>
         <Stack.Screen name="e_1" component={e_1}></Stack.Screen>
+        <Stack.Screen name="b_2" component={b_2}></Stack.Screen>
       </Stack.Navigator>
 
     </NavigationContainer>
